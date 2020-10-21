@@ -4,7 +4,7 @@ src/server.c\
 
 INC= -Iinc
 
-PROJECT_NAME = miniproject_Linux
+PROJECT_NAME = miniproject_Linux.o
 
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
