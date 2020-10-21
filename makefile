@@ -1,13 +1,8 @@
-SRC = src/client.c\
-src/server.c\
+all: client server
 
 
-INC= -Iinc
+client:
+	gcc client.c -o c.out
 
-PROJECT_NAME = miniproject_Linux.o
-
-$(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
-
-run:$(PROJECT_NAME)
-	./${PROJECT_NAME}
+server:
+	gcc server.c -o s.out
